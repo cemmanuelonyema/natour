@@ -1,0 +1,51 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px, 10/16 = 62.5%
+    scroll-behavior: smooth;
+
+
+    @include respond (tab-land){ //<1200
+        font-size: 56.25%; // 1em = 16px, 9/16 = 56.25%
+        
+    }
+
+    @include respond (tab-port){ //<900
+        font-size: 50%; //  8/16 = 50%
+
+    }
+
+    @include respond (phone){ //<600
+        font-size: 43.75%; //  7/16 = 62.5%
+
+    }
+
+    @include respond (s-phone){ //<350
+        font-size: 31.25%; //  5/16 = 31.25%
+
+    }
+
+    @include respond (big-desktop){ // >1800
+        font-size: 75%; //  12/16 = 75%
+
+
+    }
+
+
+}
+
+body {
+    font-family: 'lato', 'Poppins', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-grey-dark;
+}
+
+
+
